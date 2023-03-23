@@ -4,9 +4,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/scripts.js"></script>
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
   <title>Character Builder</title>
 </head>
 <body>
-  
+  <div>
+    <h1>Welcome to our Character Builder Site!</h1>
+    <p>Please fill out the forms below to view your results:</p>
+    <form id="character">
+      <label for="name">Name</label>
+      <input id="name" type="text"><br><br>
+
+      <label>
+        <input type="radio" name="age" value="old">
+        Old
+      </label><br>
+      <label>
+        <input type="radio" name="age" value="young">
+        Young
+      </label><br><br>
+
+      <label for="species-select">Character Species:</label>
+      <select id="species">
+        <option value="">--Please choose an option--</option>
+        <option value="elf">Elf</option>
+        <option value="human">Human</option>
+      </select><br><br>
+      <button type="submit">Click here to view your character!</button>
+    </form>
+
+    
+      <p id="results" class="hidden"></p>
+    </div>
+  </div>
 </body>
 </html>
